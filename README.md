@@ -15,7 +15,7 @@ in de folder /documentation in de pdf file evaluatie_statistiek.pdf
 
 # omgeving : opzetten van de omgeving
 
-# uitvoeren : hoe weet ik ksnel wat het allemaal doet ?
+# uitvoeren : hoe weet ik snel wat het allemaal doet ?
 
 # naamgevings nomenclatuur 
 'psm' : code, functies of packages specifiek m.b.t. het Productie Simulatie Model
