@@ -8,10 +8,19 @@ en dit deel is de 2de gequoteerde studentenopdracht
 
 # wat is de opdracht ?
 de opdracht bestaat uit 2 onafhankelijke delen namelijk
-(1) modelleren van een productiproces en 
+
+(1) modelleren van een productieproces 
+zie notebook 'autoproductie.ipynb'
+
 (2) het analyseren van verkoopsgegevens van 2dehands volvo's
-de gegevens van de opdracht kunnen teruggevonden worden
+zie notebook 'productiemodel.ipynb'
+
+de beschrijving van de opdracht kan teruggevonden worden
 in de folder /documentation in de pdf file evaluatie_statistiek.pdf
+
+Belangrijke opmerking organisatie van de notebook (voor beide oplossingen)
+Gebruik outline van VS Code om de nodige onderdelen open te klappen of te sluiten
+
 
 # omgeving : opzetten van de omgeving
 
