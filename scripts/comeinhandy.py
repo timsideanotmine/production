@@ -29,6 +29,57 @@ from tqdm import tqdm
 
 import seaborn as sns
 
+
+# -------------------------------------------------
+def simulatie(days_to_simulate, data_points, dagelijkse_productie):
+    """
+    What:
+        ...
+
+    Args:
+        aantal_dagen : ...
+        
+    Returns:
+       xx : 
+
+    """    
+    dagelijkse_productie_zonder_productie = dagelijkse_productie[dagelijkse_productie == 0]
+    dagelijkse_productie_enkel_productie = dagelijkse_productie[dagelijkse_productie != 0]
+    
+    p_zero = 0
+    p_zero = len(dagelijkse_productie_zonder_productie) / len(dagelijkse_productie) 
+    
+    plotdata_enkel_productie = dagelijkse_productie_enkel_productie.to_numpy()
+    mu, sigma = norm.fit(plotdata_enkel_productie)
+
+    x = np.linspace(min(dagelijkse_productie_enkel_productie), max(dagelijkse_productie_enkel_productie), data_points)
+    pdf = norm.pdf(x, mu, sigma)
+
+    zero_production_simulated = np.zeros(int(p_zero * days_to_simulate))
+    positive_production_simulated = np.random.normal(mu, sigma, days_to_simulate - len(zero_production_simulated))
+    daily_production_simulated = np.concatenate((zero_production_simulated, positive_production_simulated))
+    daily_production_integer_simulated = np.round(daily_production_simulated).astype(int)
+        
+    return plotdata_enkel_productie, x, pdf, daily_production_integer_simulated, mu, sigma, p_zero
+
+# -------------------------------------------------
+def cumulatieve_distributie_functie(dataset):
+    """
+    What:
+        ...
+
+    Args:
+        dataset : ...
+        
+    Returns:
+       Fxx : 
+
+    """
+    
+    resultaat = "iets uit cumulatieve_distributie_functie"
+        
+    return resultaat
+
 # -------------------------------------------------------------
 def find_df_name(df):
     """
