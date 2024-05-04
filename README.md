@@ -4,8 +4,7 @@ de code base bevat
 - "Analyze 2nd hand Volvo's"  
 
 # 2. wat is dit ?  
-Deze codebase 'production' maakt deel uit van de studentopdrachten voor de Syntra cursus 'Data scientist', gegeven door Tim Hellemans.  
-Deze codebase is de 2de gequoteerde studentenopdracht om het deel statistiek en grafieken te oefenen.
+Deze codebase 'production' maakt deel uit van de studentopdrachten voor de Syntra cursus 'Data scientist', gegeven door Tim Hellemans. Deze codebase is de 2de gequoteerde studentenopdracht om het deel statistiek en grafieken te oefenen.
 
 # 3. wat is de opdracht ?  
 
@@ -31,15 +30,21 @@ doe een run all, nadat je de omgeving hebt opgezet
     en voer de cell uit met de functie mdls.simulatie(..)  
     - secties A t.e.m. E laden en manipuleren de data
     - sectie F analyseert de productie gegevens en onderzoekt de simulatie
+    - zet de 2 lijnen met 'BRU','STO','ALL' actief of in commentaar voor resultaten relatief aan de fabriek  
+    en voer de cel opnieuw uit, pas variabele 'use_random_seed' aan voor variabiliteit in de simulatie
+    - outline opdracht 'productiemodel.ipynb'  
+    ![alt text](image-2.png)
 
 - voor notebook 'autoproductie.ipynb'  
     - ga na uitvoering 'run all'  
     direct naar sectie "F : vragen en antwoorden "
     - secie F bevat telkens een paragraaf met de (herhaalde) vraag 
     en het bijbehorende antwoord (in kleur Cadetblue) in een aparte cell          
-    - per vraag zie je ook een aparte paragraaf 'Onderzoek' met de  
+    - per vraag zie je onder het antwoord ook een aparte paragraaf 'Onderzoek' met de  
     (onderzoeks)code geschreven om het antwoord te kunnen formuleren  
-    - sectie A t.e.m E laden en manipuleren de data
+    - sectie A t.e.m E bevat het laden en manipuleren de data
+    - outline opdracht 'autoproductie.ipynb'  
+    ![alt text](image-3.png)
 
 - tips  
     - gebruik de outline functie van VS code om snel naar het deel te gaan van je interesse  
