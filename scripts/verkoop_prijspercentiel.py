@@ -23,6 +23,8 @@ from scipy.stats import norm
 from scipy.stats import pareto
 from scipy.stats import beta
 
+from scipy import stats as st
+
 from sklearn.linear_model import LinearRegression
 
 from tqdm import tqdm

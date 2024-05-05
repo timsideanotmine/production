@@ -27,10 +27,12 @@ doe een run all, nadat je de omgeving hebt opgezet
 - voor notebook 'productiemodel.ipynb'  
     - ga na uitvoering 'run all'
     direct naar sectie "G : uitvoeren van de simulatie (oplossing)"  
-    en voer de cell uit met de functie mdls.simulatie(..)  
+    en voer de cell uit met de functie mdls.simulatie(..) 
+    als je de verschillende waarden voor de fabrieken BRU en STO 
+    wil testen 
     - secties A t.e.m. E laden en manipuleren de data
     - sectie F analyseert de productie gegevens en onderzoekt de simulatie
-    - zet de 2 lijnen met 'BRU','STO','ALL' actief of in commentaar voor resultaten relatief aan de fabriek  
+    - in sectie G : zet de 2 lijnen met 'BRU','STO','ALL' actief of in commentaar voor resultaten relatief aan de fabriek  
     en voer de cel opnieuw uit, pas variabele 'use_random_seed' aan voor variabiliteit in de simulatie
     - outline opdracht 'productiemodel.ipynb'  
     ![alt text](image-2.png)
@@ -69,4 +71,25 @@ zie requirements.txt
     - mdls.simulatie(..)  
     = verwerkt en simuleert het gevraagde
     zie ook mdls.simulatie? voor input en output  
+
+- /scripts/verkoop_bereken_CI as vkCI 
+    - vbCI.bereken_confidence_interval(..)  
+    = berekent confidence interval voor een dataframe en bijbehorende column
+    = gebruikt in vraag 7
+    zie ook vbCI.bereken_confidence_interval? voor input en output  
+
+- /scripts/bereken_percentiel_voor_rang as vpp
+    - vpp.bereken_percentiel_voor_rang(..)
+    = berekent in welk precentiel de gerankte waarde valt
+    = gebruikt in vraag 2
+    zie ook vpp.bereken_percentiel_voor_rang? voor input en output  
+
+- /scripts/my_constants.py 
+    - bevat constanten die mogelijk hebruikbaar zijn, zoals bv. kleuren  
+    opgezet na tip van Tim tijdens de les, wordt voorlopig nog niet gebruikt  
+
+- /scripts/my_matplotlib_standards.py as mypltstd  
+    - mypltstd.my_matplotlib_pyplot_standards_setup(..)
+    opgezet na tip van Tim tijdens de les  
+    voor grafische plot constanten en default setting  
 
